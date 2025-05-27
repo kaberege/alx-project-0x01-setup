@@ -1,5 +1,6 @@
 @import "tailwindcss";
 
+/* These imports are deprecated in tailwindcss V4. They are only addded for checkers review! */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

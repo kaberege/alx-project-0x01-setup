@@ -1,6 +1,7 @@
 import PostCard from "@/components/common/PostCard";
 import PostModal from "@/components/common/PostModal";
 import Header from "@/components/layout/Header";
+import Footer from "@/components/layout/Footer";
 import { PostData, PostProps } from "@/interfaces";
 import { useState } from "react";
 
@@ -21,7 +22,7 @@ const Posts: React.FC<PostProps[]> = ({ posts }) => {
         <div className="flex justify-between">
           <h1 className=" text-2xl font-semibold">Post Content</h1>
           <button onClick={() => setModalOpen(true)}
-            className="bg-blue-700 px-4 py-2 rounded-full text-white">Add Post</button>
+            className="bg-blue-700 hover:bg-blue-800 transition-colors duration-300 cursor-pointer px-4 py-2 rounded-full text-white">Add Post</button>
         </div>
         <div className="grid grid-cols-3 gap-2 ">
           {
@@ -31,6 +32,7 @@ const Posts: React.FC<PostProps[]> = ({ posts }) => {
           }
         </div>
       </main>
+      <Footer/>
 
       {isModalOpen && (
         <PostModal onClose={() => setModalOpen(false)} onSubmit={handleAddPost} />
