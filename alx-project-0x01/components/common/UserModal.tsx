@@ -160,7 +160,7 @@ const UserModal: React.FC<UserModalProps> = ({ onClose, onSubmit }) => {
                     <div className="mb-4">
                         <label htmlFor="phone" className="block text-gray-700 font-medium mb-2">Phone:</label>
                         <input
-                            type="text"
+                            type="tel"
                             id="phone"
                             name="phone"
                             value={user.phone}
@@ -172,7 +172,7 @@ const UserModal: React.FC<UserModalProps> = ({ onClose, onSubmit }) => {
                     <div className="mb-4">
                         <label htmlFor="website" className="block text-gray-700 font-medium mb-2">Website:</label>
                         <input
-                            type="text"
+                            type="url"
                             id="website"
                             name="website"
                             value={user.website}
